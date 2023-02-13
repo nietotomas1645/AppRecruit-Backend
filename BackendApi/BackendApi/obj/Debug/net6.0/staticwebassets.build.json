@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "Gh16AXp5tnn73odW3aHy18qxlk+xwABIXEKc1zapfDw=",
+  "Source": "BackendApi",
+  "BasePath": "_content/BackendApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BackendApi\\wwwroot",
+      "Source": "BackendApi",
+      "ContentRoot": "E:\\travelproyect\\BackendApi\\BackendApi\\wwwroot\\",
+      "BasePath": "_content/BackendApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\travelproyect\\BackendApi\\BackendApi\\wwwroot\\638117259534821120.pdf",
+      "SourceId": "BackendApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\travelproyect\\BackendApi\\BackendApi\\wwwroot\\",
+      "BasePath": "_content/BackendApi",
+      "RelativePath": "638117259534821120.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\638117259534821120.pdf"
+    },
+    {
+      "Identity": "E:\\travelproyect\\BackendApi\\BackendApi\\wwwroot\\638117302535067355.js",
+      "SourceId": "BackendApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\travelproyect\\BackendApi\\BackendApi\\wwwroot\\",
+      "BasePath": "_content/BackendApi",
+      "RelativePath": "638117302535067355.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\638117302535067355.js"
+    },
+    {
+      "Identity": "E:\\travelproyect\\BackendApi\\BackendApi\\wwwroot\\638117302956743966.pdf",
+      "SourceId": "BackendApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\travelproyect\\BackendApi\\BackendApi\\wwwroot\\",
+      "BasePath": "_content/BackendApi",
+      "RelativePath": "638117302956743966.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\638117302956743966.pdf"
+    },
+    {
+      "Identity": "E:\\travelproyect\\BackendApi\\BackendApi\\wwwroot\\638117328625583894.png",
+      "SourceId": "BackendApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\travelproyect\\BackendApi\\BackendApi\\wwwroot\\",
+      "BasePath": "_content/BackendApi",
+      "RelativePath": "638117328625583894.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\638117328625583894.png"
+    }
+  ]
+}
