@@ -1,5 +1,8 @@
 using BackendApi.Context;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +24,22 @@ var connectionString = builder.Configuration.GetConnectionString(CONNECTIONNAME)
 // 3. Add contexto
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
 
-
+//Token Service
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(x =>
+{
+    x.RequireHttpsMetadata = false;
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("veryverysecret.....")),
+        ValidateIssuer = false
+    };
+});
 //5. Cors Configuration
 
 builder.Services.AddCors(options =>
@@ -44,7 +62,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

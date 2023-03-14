@@ -53,13 +53,13 @@ namespace BackendApi.Controllers
             try
             {
                 var job = await _authContext.Jobs.FindAsync(id);
-                if(job == null)
+                if (job == null)
                 {
                     return NotFound();
                 }
                 return Ok(job);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
